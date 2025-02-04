@@ -1,0 +1,127 @@
+/* Overall container layout */
+.container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  background: #f9f9f9;
+}
+
+/* Sidebar styling */
+.sidebar {
+  width: 220px;
+  height: 800px;
+  padding: 15px;
+  background: #f4f4f4;
+  border-right: 3px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+/* Draggable table items */
+.draggable-table {
+  padding: 12px;
+  margin-bottom: 10px;
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 8px;
+  cursor: grab;
+  transition: transform 0.2s ease-in-out;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.draggable-table:hover {
+  transform: scale(1.05);
+}
+
+/* Grid styling */
+.grid {
+  flex-grow: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  border: 2px dashed green;
+  background: white;
+  min-height: 500px;
+  border-radius: 10px;
+}
+
+/* Individual table box */
+.table-box {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  transition: transform 0.1s ease-in-out;
+  border: 2px solid #007bff;
+  overflow: hidden;
+}
+
+/* Table header */
+.table-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  background: linear-gradient(135deg, #007bff, #00c6ff);
+  color: white;
+  border-bottom: 2px solid #0056b3;
+  cursor: grab;
+}
+
+.table-header svg {
+  cursor: pointer;
+}
+
+.remove-btn {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+}
+
+.remove-btn:hover {
+  color: red;
+}
+
+/* Table data rows */
+.tableRow {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.tableData {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  transition: background 0.3s ease-in-out;
+}
+
+.tableData:nth-child(even) {
+  background: #f8f8f8;
+}
+
+.tableData:hover {
+  background: #e0f7fa;
+}
+
+/* Data column width */
+.data {
+  width: 100px;
+  font-weight: bold;
+  text-align: center;
+}
